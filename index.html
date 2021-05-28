@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Login</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="account">
+        <h1>Input Form</h1>
+        		<form  class="form" action='#' onsubmit='return validate()' method ='POST'>
+        		            <div>
+                <div>
+                    <label>Username:</label>
+                    <input class='box' type="text" name="user" id="user" autocomplete="on" placeholder="Enter User name">
+                    <span id="username" class="t"></span>
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input class='box' type="text" name="pass" id="pass" autocomplete="on" placeholder="Enter password">
+                    <span id="password" class="t"></span>
+                </div>
+                <div>
+                    <label>Confirm Password:</label>
+                    <input class='box' type="text" name="conpass" id="conpass" autocomplete="on" placeholder="Enter password again">
+                    <span id="confirmpass" class="t"></span>
+                </div>
+                <div>
+                    <label>Mobile Number:</label>
+                    <input class='box' type="number" name="mnumber" id="Mobile_Number" autocomplete="on" placeholder="Enter Mobile Number">
+                    <span id="num" class="t"></span>
+                </div>
+                <div>
+                    <label>E-Mail:</label>
+                    <input class='box' type="text" name="email" id="EMail" autocomplete="on" placeholder="Enter E-Mail">
+                    <span id="mail" class="t"></span>
+                </div>
+                <p>
+                    <input class='box' id="date" type="date" name="Date of birth" placeholder="Date of birth">
+                    <span id="d" class="t"></span>
+                </p>
+                <div id="a">  
+                    <label> Gender:<br>
+                   <input  type="radio" name="gender" value="male"> Male 
+                   <input  type="radio" name="gender" value="female"> Female
+                   <input  type="radio" name="gender" value="custom"> Custom	
+                    </label>
+                    <span id="gender" class="t"></span>
+                </div><br>
+                <input type="submit" name="submit" value="Submit" id="submit">
+                <p>Already have an account ?<a href='https://facebook.com'> Sign in</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
